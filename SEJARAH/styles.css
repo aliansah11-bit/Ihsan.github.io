@@ -1,0 +1,228 @@
+/* Reset dan gaya umum */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-image: url(bg.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+/* Kontainer umum */
+.container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Gaya untuk halaman awal */
+.start-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.title-container {
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 4rem;
+  color: #daa560;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+
+.teks-rules {
+  font-size: 2.5rem;
+  color: #daa560;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+
+.start-btn {
+  padding: 20px 40px;
+  font-size: 1.5rem;
+  background-color: #daa560;
+  border: 2px solid #8d6e1e;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
+  margin-top: 20px;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.start-btn:hover {
+  background-color: #be8003;
+}
+
+.start-btn:active {
+  transform: scale(0.98);
+}
+
+/* Animasi untuk tombol start */
+.pulse {
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Gaya untuk halaman rules */
+.rules-page {
+  display: none;
+  text-align: center;
+}
+
+.rules-box {
+  background-color: #daa560;/* Warna latar belakang kotak */
+  width: 100%; /* Lebar kontainer */
+  max-width: 800px; /* Membatasi lebar maksimal */
+  padding: 20px;
+  border: 2px solid #8d6e1e;
+  border-radius: 10px; /* Membuat sudut kotak melengkung */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Memberikan bayangan lembut */
+  margin: 20px auto; /* Menempatkan kotak di tengah halaman */
+  text-align: left;
+  color: #ffffff; /* Mengubah warna teks menjadi gelap (misalnya hitam) */
+}
+
+.rules-list {
+  list-style-type: none; /* Menghapus bullets pada daftar */
+  padding-left: 0; /* Menghilangkan indentasi */
+  font-size: 1rem;
+  line-height: 1.6;
+  font-weight: bold;
+}
+
+.rules-list li {
+  margin-bottom: 10px; /* Menambahkan jarak antar item */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#start-game {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  background-color: #daa560;
+  border: 2px solid #8d6e1e;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+#start-game {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  background-color: #daa560;
+  border: 2px solid #8d6e1e;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+#start-game {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  background-color: #daa560;
+  border: 2px solid #8d6e1e;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+/* Gaya untuk halaman soal */
+.quiz-page {
+  display: none;
+  text-align: center;
+}
+
+.options button {
+  display: block;
+  margin: 10px auto;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  background-color: #daa560;
+  border: 2px solid #8d6e1e;
+  border-radius: 5px;
+  width: 70%;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.options button:hover {
+  background-color: #644b0d;
+  border: 2px solid #dba622;
+  color: white;
+  transform: scale(1.05);
+}
+
+.options button:active {
+  background-color: #6c757d;
+  transform: scale(1);
+}
+
+.options button.correct {
+  background-color: #28a745;
+  color: white;
+}
+
+.options button.wrong {
+  background-color: #dc3545;
+  color: white;
+}
+
+/* Gaya untuk halaman hasil */
+.result-page {
+  display: none;
+  text-align: center;
+}
+
+#badge img {
+  width: 70px;
+  height: 70px;
+}
+
+#restart-button {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  background-color: #daa560;
+  border: 2px solid #8d6e1e;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+

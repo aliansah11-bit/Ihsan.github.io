@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Sejarah Indonesia</title>
+  <link rel="stylesheet" href="styles.css">
+  <audio autoplay>
+    <source src="audio/background-music.mp3" type="audio/mp3">
+    Browsermu tidak mendukung tag audio.
+  </audio>
+</head>
+<body>
+  
+
+  <div class="container" id="main-container">
+    <!-- Halaman Awal -->
+    <div class="start-page" id="start-page">
+      <div class="title-container">
+        <h1 class="title">Game Sejarah Indonesia</h1>
+      </div>
+      <button id="start-button" class="start-btn pulse">Start</button>
+    </div>
+
+    <!-- Halaman Rules -->
+    <div class="rules-page" id="rules-page">
+      <h1 class="teks-rules">Aturan Bermain</h1>
+      <div class="rules-box">
+        <ul class="rules-list">
+          <li>Jawab dengan memilih salah satu pilihan yang tersedia.</li>
+          <li>Jawaban benar: +10 poin, salah: -5 poin.</li>
+          <li>Warna pilihan berubah untuk menunjukkan jawaban benar/salah.</li>
+          <li>Nilai akhir dan badge prestasi akan ditampilkan setelah selesai.</li>
+        </ul>
+      </div>
+      <button id="start-game" class="pulse">Mulai Game</button>
+    </div>
+
+    <!-- Halaman Soal -->
+    <div class="quiz-page" id="quiz-page">
+      <h2 id="question"></h2>
+      <div class="options" id="options"></div>
+      <p id="score">Skor: 0</p>
+    </div>
+
+    <!-- Halaman Hasil -->
+    <div class="result-page" id="result-page">
+      <h1>Selamat, Kamu Selesai!</h1>
+      <p id="final-score">Skor: 0</p>
+      <div id="badge"></div>
+      <button id="restart-button">Mulai Lagi</button>
+    </div>
+  </div>  
+
+  <script src="script.js"></script>
+</body>
+</html>
